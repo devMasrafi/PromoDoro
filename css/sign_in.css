@@ -1,0 +1,18 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Jomhuria", serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background: url(../images/BACKGROUND.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(8px);
+  height: 100%;
+}

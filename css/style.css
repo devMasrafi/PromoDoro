@@ -1,0 +1,137 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Jomhuria", serif;
+}
+
+ul, ol, li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1240px;
+  margin: 0 auto;
+}
+
+body {
+  background: url(../images/BACKGROUND.jpg);
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body #navbar {
+  margin-top: 55px;
+}
+body #navbar .container .nav_wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+body #navbar .container .nav_wrapper .menu ul {
+  display: flex;
+  align-items: center;
+  column-gap: 45px;
+}
+body #navbar .container .nav_wrapper .menu ul li a {
+  color: #FFF;
+  text-transform: uppercase;
+  font-size: 40px;
+}
+body #content {
+  width: 340px;
+  margin: 0 auto;
+}
+body #content .timer {
+  position: relative;
+  padding-top: 35px;
+  text-align: center;
+}
+body #content .timer .timer_shapes i {
+  font-size: 32px;
+  position: absolute;
+  bottom: 0;
+  left: 48%;
+  color: #FFF;
+}
+body #content .timer .timer_text {
+  position: absolute;
+  top: 110px;
+  left: 95px;
+}
+body #content .timer .timer_text .countdown {
+  background-color: #FFF;
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+body #content .timer .timer_text .countdown h2 {
+  font-size: 96px;
+  line-height: 0.8;
+  letter-spacing: 1.3px;
+  color: #000000;
+  text-transform: uppercase;
+  font-style: italic;
+}
+body #content .timer .timer_text .countdown h2 span {
+  font-size: 24px;
+  text-transform: lowercase;
+  font-style: normal;
+  font-family: "Inter", sans-serif;
+}
+body #content .timer .timer_text .weather {
+  margin-top: 15px;
+}
+body #content .timer .timer_text .weather i {
+  font-size: 24px;
+  background-color: #FFF;
+  height: 48px;
+  width: 160px;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+body #content .music {
+  margin-top: 30px;
+  font-family: "Inter", sans-serif;
+}
+body #content .music .music_title {
+  width: 342px;
+  height: 71px;
+  background-color: #FFF;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body #content .music .music_title .avatar {
+  padding-right: 10px;
+}
+body #content .music .music_title .avatar img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: aqua;
+}
+body #content .music .music_title .titles h3 {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+}
+body #content .music .music_title .titles p {
+  font-size: 12px;
+  font-family: "Inter", sans-serif;
+}
+body #content .music .music_controls {
+  display: flex;
+  width: 160px;
+  height: 43px;
+  margin: 15px auto;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FFF;
+  border-radius: 10px;
+  padding: 5px 20px;
+  text-align: center;
+}
