@@ -10,22 +10,47 @@
     <!-- font_link -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Jomhuria&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Jomhuria&family=Poppins:ital,wght@0,400;1,500&display=swap" rel="stylesheet">
     <!-- cdnjs -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <section id="sign_in">
         <form class="sign_in_form">
-            <div class="name">
-                <label for="name">Name</label>
-                <input type="text">
+            <div class="heading">
+                <h2>
+                    Sign In
+                </h2>
             </div>
-            <div class="email">
-                <label for="email">Email</label>
-                <input type="text">
+            <div class="box_input">
+                <div class="name_gp">
+                    <input class="name" type="text" placeholder="User Name">
+                    <p class="name_noti"></p>
+                </div>
+                <div class="pass_gp">
+                    <input class="email" type="text" placeholder="email@mail.com">
+                    <p class="email_noti"></p>
+                </div>
+            </div>
+            <div class="condition_select">
+                <input type="radio" id="condition">
+                <label for="condition">I accpet the terms and condition</label>
+            </div>
+            <button class="submit_btn">
+                <a href="#">Sign In</a>
+            </button>
+            <div class="sign_in">
+                <p>
+                    Dont have an accout?
+                    <a href="sign_up.html">create</a>
+                </p>
+            </div>
+            <div class="back_btn">
+                <a href="index.html">go back</a>
             </div>
         </form>
     </section>
+
+    <script src="./js/sign_in.js"></script>
 </body>
 </html>

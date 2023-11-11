@@ -1,0 +1,93 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+ul, ol {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background: url(../images/BACKGROUND.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+body #card {
+  background-color: rgba(32, 48, 100, 0.473);
+  width: 380px;
+  border-radius: 10px;
+  border: none;
+  margin: 90px auto;
+}
+body #card .heading {
+  color: #FFF;
+  font-size: 24px;
+  text-transform: capitalize;
+  text-align: center;
+  padding-bottom: 15px;
+}
+body #card .card_wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 0 40px;
+}
+body #card .card_wrapper .info1 {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  padding-bottom: 20px;
+}
+body #card .card_wrapper .info1 p {
+  color: #FFF;
+  text-transform: capitalize;
+}
+body #card .card_wrapper .info1 input {
+  font-size: 16px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  width: 100%;
+  padding: 5px 10px;
+}
+body #card .condition_select {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body #card .condition_select label {
+  font-size: 14px;
+  color: #fff;
+  padding-left: 10px;
+}
+body #card .submit_btn {
+  text-align: center;
+  padding: 15px 0;
+}
+body #card .submit_btn button {
+  padding: 5px 65px;
+  border-radius: 10px;
+  border: none;
+}
+body #card .submit_btn button a {
+  border: none;
+  color: #223265;
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: lowercase;
+}
+body #card .navigate {
+  text-align: center;
+  padding: 0 0 20px 0;
+}
+body #card .navigate a {
+  color: #FFF;
+  text-transform: capitalize;
+  font-weight: 600;
+}

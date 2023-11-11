@@ -2,7 +2,8 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Jomhuria", serif;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
 }
 
 a {
@@ -13,6 +14,87 @@ body {
   background: url(../images/BACKGROUND.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  filter: blur(8px);
+  font-size: 32px;
+}
+body .sign_in_form {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(32, 48, 100, 0.473);
+  width: 380px;
+  border-radius: 10px;
+  margin: 80px auto;
+  padding: 20px 40px;
+}
+body .sign_in_form .heading h2 {
+  font-size: 64px;
+  text-align: center;
+  padding-top: 20px;
+  letter-spacing: 150%;
+  color: #fff;
+}
+body .sign_in_form .box_input {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  width: 100%;
   height: 100%;
+  padding: 20px 0;
+}
+body .sign_in_form .box_input .email_noti {
+  color: #fff;
+}
+body .sign_in_form .box_input .name_noti {
+  color: #FFF;
+}
+body .sign_in_form .box_input .name {
+  border-radius: 5px;
+  border: none;
+  padding: 5px 10px;
+  width: 100%;
+  outline: none;
+}
+body .sign_in_form .box_input .email {
+  border-radius: 5px;
+  border: none;
+  padding: 5px 10px;
+  width: 100%;
+  outline: none;
+}
+body .sign_in_form .condition_select {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  margin: 15px auto;
+}
+body .sign_in_form .condition_select label {
+  font-size: 16px;
+  color: #fff;
+}
+body .sign_in_form .submit_btn {
+  display: block;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+}
+body .sign_in_form .submit_btn a {
+  color: #223265;
+  font-weight: 600;
+}
+body .sign_in_form .sign_in {
+  color: #FFF;
+  padding: 10px 0;
+}
+body .sign_in_form .sign_in p {
+  font-size: 16px;
+  text-align: center;
+}
+body .sign_in_form .sign_in p a {
+  color: aqua;
+}
+body .sign_in_form .back_btn {
+  margin: 0 auto;
+}
+body .sign_in_form .back_btn a {
+  color: #FFF;
+  text-transform: capitalize;
 }
