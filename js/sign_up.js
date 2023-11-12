@@ -10,11 +10,45 @@ let accEmailErr = document.querySelector(".acc_mail_err")
 let accPassErr = document.querySelector(".acc_pass_err")
 let accConPassErr = document.querySelector(".acc_con_pass_err")
 
+let emailValidate = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+
+let passValidate = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$"
+
 submitBtn.addEventListener("click", (e)=>{
     e.preventDefault()
     if(!accName.value){
-        console.log("ny");
+        accNameErr.innerHTML = "Enter your name"
     }else{
-        console.log("ok");
+        accNameErr.innerHTML = ""
     }
+    if(!accMail.value){
+        accEmailErr.innerHTML = "Enter mail"
+    }else{
+        if(accMail.value.match(emailValidate)){
+            accEmailErr.innerHTML = ""
+        }else{
+            accEmailErr.innerHTML = "Enter valid mail"
+        }
+    }
+
+    if(!accPass.value){
+        accPassErr.innerHTML = "Enter password"
+    }else{
+        if(accPass.value.match(passValidate)){
+            accPassErr.innerHTML = "strong"
+        }else{
+            accPassErr.innerHTML = "Weak"
+        }
+    }
+    if(!accConPass.value){
+        accConPassErr.innerHTML = "Retype your password"
+    }else{
+        if(accConPass.value == accPass.value){
+            accConPassErr.innerHTML = ""
+        }else{
+            accConPassErr.innerHTML = "Dose'nt match"
+        }
+    }
+
+
 })
