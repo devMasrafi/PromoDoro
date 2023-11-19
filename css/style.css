@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Jomhuria", serif;
+  font-family: "Inter", sans-serif;
 }
 
 ul, ol, li {
@@ -42,6 +42,7 @@ body #navbar .container .nav_wrapper .menu ul li a {
   color: #FFF;
   text-transform: uppercase;
   font-size: 40px;
+  font-family: "Jomhuria", serif;
 }
 body #content {
   width: 340px;
@@ -52,12 +53,14 @@ body #content .timer {
   padding-top: 35px;
   text-align: center;
 }
-body #content .timer .timer_shapes i {
-  font-size: 32px;
+body #content .timer .timer_shapes #startBtn {
   position: absolute;
+  padding: 10px 40px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
   bottom: 0;
-  left: 48%;
-  color: #FFF;
+  left: 120px;
 }
 body #content .timer .timer_text {
   position: absolute;
@@ -66,33 +69,28 @@ body #content .timer .timer_text {
 }
 body #content .timer .timer_text .countdown {
   background-color: #FFF;
-  padding: 10px 15px;
+  height: 85px;
+  width: 160px;
   border-radius: 10px;
 }
 body #content .timer .timer_text .countdown h2 {
-  font-size: 96px;
+  font-size: 46px;
   line-height: 0.8;
   letter-spacing: 1.3px;
   color: #000000;
   text-transform: uppercase;
   font-style: italic;
+  font-weight: 700;
+  padding: 25px 0;
 }
-body #content .timer .timer_text .countdown h2 span {
-  font-size: 24px;
-  text-transform: lowercase;
-  font-style: normal;
-  font-family: "Inter", sans-serif;
-}
-body #content .timer .timer_text .weather {
+body #content .timer .timer_text .controls {
   margin-top: 15px;
 }
-body #content .timer .timer_text .weather i {
-  font-size: 24px;
-  background-color: #FFF;
-  height: 48px;
-  width: 160px;
+body #content .timer .timer_text .controls #resetBtn {
+  padding: 5px 20px;
+  border: none;
   border-radius: 10px;
-  padding: 5px 10px;
+  margin: 20px 0;
 }
 body #content .music {
   margin-top: 30px;

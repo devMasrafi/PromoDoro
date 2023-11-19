@@ -39,17 +39,16 @@
         <div class="timer">
             <div class="timer_shapes">
                 <img src="./images/Ellipse.png" alt="Ellipse">
-                <i class="fa-solid fa-play play_btn"></i>
+                <button id="startBtn" onclick="startTimer()">Start</button>
             </div>
             <div class="timer_text">
                 <div class="countdown">
-                    <h2>
-                        25 <span>min</span>
+                    <h2 id="timer">
+                        25:00
                     </h2>
                 </div>
-                <div class="weather">
-                    <i class="fa-solid fa-cloud-sun"></i>
-
+                <div class="controls">
+                    <button id="resetBtn" onclick="resetTimer()">Reset</button>
                 </div>
             </div>
         </div>

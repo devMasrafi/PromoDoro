@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box; 
-    font-family: 'Jomhuria', serif;
+    font-family: 'Inter', sans-serif;
 }
 
 ul,ol,li{
@@ -31,6 +31,7 @@ body{
             .nav_wrapper{
                 display: flex;
                 justify-content: space-between;
+                
                 .menu{
                     ul{
                         display: flex;
@@ -41,6 +42,7 @@ body{
                                 color: #FFF;
                                 text-transform: uppercase;
                                 font-size: 40px;
+                                font-family: 'Jomhuria', serif;
                             }
                         }
                     }
@@ -57,12 +59,14 @@ body{
             padding-top: 35px;
             text-align: center;
             .timer_shapes{
-                i{
-                    font-size: 32px;
+                #startBtn{
                     position: absolute;
+                    padding: 10px 40px;
+                    border-radius: 10px;
+                    outline: none;
+                    border: none;
                     bottom: 0;
-                    left: 48%;
-                    color: #FFF;
+                    left: 120px;
                 }
             }
             .timer_text{
@@ -71,32 +75,27 @@ body{
                 left: 95px;
                 .countdown{
                     background-color: #FFF;
-                    padding: 10px 15px;
+                    height: 85px;
+                    width: 160px;
                     border-radius: 10px;
                     h2{
-                        font-size: 96px;
+                        font-size: 46px;
                         line-height: 0.8;
                         letter-spacing: 1.3px;
                         color: #000000;
                         text-transform: uppercase;
                         font-style: italic;
-                        span{
-                            font-size: 24px;
-                            text-transform: lowercase;
-                            font-style: normal;
-                            font-family: 'Inter', sans-serif;
-                        }
+                        font-weight: 700;
+                        padding: 25px 0;
                     }
                 }
-                .weather{
+                .controls{
                     margin-top: 15px;
-                    i{
-                        font-size: 24px;
-                        background-color: #FFF;
-                        height: 48px;
-                        width: 160px;
+                    #resetBtn{
+                        padding: 5px 20px;
+                        border: none;
                         border-radius: 10px;
-                        padding: 5px 10px;
+                        margin: 20px 0;
                     }
                 }
             }
